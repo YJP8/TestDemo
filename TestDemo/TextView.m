@@ -11,7 +11,8 @@
 @implementation TextView
 
 -(void)awakeFromNib {
-    self.backgroundColor = [UIColor cyanColor];
+    [super awakeFromNib];
+    self.backgroundColor = _color;
 }
 
 @end
